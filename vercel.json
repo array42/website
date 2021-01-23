@@ -1,9 +1,0 @@
-{
-  "routes": [
-    {
-      "src": "/",
-      "status": 301,
-      "headers": { "Location": "https://array42.com/" }
-    }
-  ]
-}
