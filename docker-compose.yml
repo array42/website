@@ -6,8 +6,8 @@ services:
     volumes:
       - .:/var/www/html
       - .docker/nginx/conf.d:/etc/nginx/conf.d
-      - .docker/nginx/certbot/conf:/etc/nginx/ssl
-      - .docker/nginx/certbot/data:/var/www/certbot
+      - .docker/certbot/conf:/etc/nginx/ssl
+      - .docker/certbot/data:/var/www/certbot
     ports:
       - 80:80
       - 443:443
