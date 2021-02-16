@@ -13,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+        <link href="/assets/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+
         <style>
             html {
                 font-family: 'Open Sans', sans-serif;
@@ -25,11 +27,23 @@
                 align-items: center;
                 justify-content: center;
                 height: 98vh;
+                flex-flow: column;
             }
             .container img {
                 height: 100%;
                 width: 100%;
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+            }
+            .social {
+                display: flex;
+                justify-content: space-around;
+            }
+            .social a {
+                text-decoration: none;
+                color: white;
+            }
+            .social a:nth-child(2) {
+                margin: 0 15px;
             }
             footer .contact-email {
                 position: fixed;
@@ -59,6 +73,17 @@
             <h1>
                 <img src="/assets/images/logo.svg" alt="ARRAY42">
             </h1>
+            <div class="social">
+                <a title="Array42 Instagram" href="https://github.com/array42" rel="noopener follow index">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+                <a title="Array42 Instagram" href="https://facebook.com/array42" rel="noopener follow index">
+                    <i class="fab fa-facebook fa-3x"></i>
+                </a>
+                <a title="Array42 Instagram" href="https://intagram.com/array42com" rel="noopener follow index">
+                    <i class="fab fa-instagram fa-3x"></i>
+                </a>
+            </div>
         </div>
         <footer>
             <a class="contact-email" href="mailto:info@array42.com" target="_blank">Contact us</a>
