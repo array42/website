@@ -10,7 +10,13 @@
         <meta name="description" content="ARRAY42 - Web Development">
         <meta name="robots" content="index, follow">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
         <style>
+            html {
+                font-family: 'Open Sans', sans-serif;
+            }
             body {
                 background-color: #498CE9;
             }
@@ -24,6 +30,17 @@
                 height: 100%;
                 width: 100%;
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+            }
+            footer .contact-email {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                padding: 20px;
+            }
+            a.contact-email {
+                font-size: 18px;
+                color: white;
+                text-decoration: none;
             }
         </style>
         <!-- Google Tag Manager -->
@@ -43,5 +60,9 @@
                 <img src="/assets/images/logo.svg" alt="ARRAY42">
             </h1>
         </div>
+        <footer>
+            <a class="contact-email" href="mailto:info@array42.com" target="_blank">Contact us</a>
+        </footer>
     </body>
+
 </html>
