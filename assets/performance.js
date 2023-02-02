@@ -35,15 +35,23 @@ new PerformanceObserver((list) => {
 }).observe({type: 'largest-contentful-paint', buffered: true});
 
 new PerformanceObserver((list) => {
+    let logData = [];
     for (const {value, startTime, sources} of list.getEntries()) {
         // Log the shift amount and other entry info.
-        console.log('Layout shift:', {value, startTime});
+        //console.log('Layout shift:', {value, startTime});
+        logData.push({value, startTime});
         if (sources) {
             for (const {node, curRect, prevRect} of sources) {
                 // Log the elements that shifted.
-                console.log('  Shift source:', node, {curRect, prevRect});
+                //console.log('  Shift source:', node, {curRect, prevRect});
+                logData.push([node, {curRect, prevRect}])
             }
         }
+    } 
+    
+    if (logData) {
+        console.log("--- CLS --- ");
+        console.table(logData);
     }
 }).observe({type: 'layout-shift', buffered: true});
 
