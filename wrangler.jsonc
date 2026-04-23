@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "array42-com",
+  "name": "array42",
+  "account_id": "416fb672820e4e23fd10f58e549c7e37",
   "main": "./.output/server/index.mjs",
   "compatibility_date": "2025-10-01",
   "compatibility_flags": ["nodejs_compat"],
