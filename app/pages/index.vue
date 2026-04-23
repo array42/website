@@ -48,7 +48,13 @@ useHead({
         >
       </h1>
     </main>
-    <footer class="p-5 text-right">
+    <footer class="p-5 text-right flex justify-end gap-6">
+      <NuxtLink
+        to="/privacy"
+        class="text-white text-lg no-underline hover:underline"
+      >
+        Privacy policy
+      </NuxtLink>
       <a
         href="mailto:info@array42.com"
         class="text-white text-lg no-underline hover:underline"
